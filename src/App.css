@@ -5,10 +5,30 @@
 body,
 html {
   font-family: 'Lato', sans-serif;
+  color: #000000;
 }
 
 p {
   padding: 0;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+.green {
+  color: #10504f;
+}
+
+.greenBg {
+  background-color: #10504f;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .promoBar {
@@ -18,5 +38,521 @@ p {
   font-weight: 500;
 }
 
-@media (min-width: 600px) {
+.promoBar p {
+  margin: 0;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav .menu {
+  border-radius: 28px;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffffff;
+}
+
+.nav .menu span {
+  background-color: #ffffff;
+  width: 18px;
+  height: 2px;
+  margin: 3px auto;
+  padding: 0;
+  display: block;
+}
+
+.nav .menu span:first-child {
+  margin-top: 8px;
+}
+
+.nav ul li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.nav ul.navLinks {
+  display: none;
+}
+
+.nav .logo {
+  padding: 10px 0;
+  left: 50px;
+  width: 93px;
+  height: 77px;
+  display: block;
+}
+
+.heroCta img {
+  width: 100%;
+}
+
+.heroSlider .heroCta,
+.banner .heroCta {
+  position: relative;
+  background-color: #efefef;
+}
+
+.heroSlider .heroCta .cta {
+  padding: 10px 0 35px 0;
+}
+
+.heroSlider .heroCta .cta h1 {
+  font-weight: normal;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.heroSlider .heroCta .cta p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.heroSlider .heroCta .cta button {
+  font-family: 'Lato', sans-serif;
+  padding: 13px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.categories {
+  width: 100%;
+  max-width: 95%;
+  margin: 10px auto;
+}
+
+.categories .category {
+  display: inline-block;
+  width: 47%;
+  padding: 5px;
+}
+
+.categories .category:nth-child(2) {
+  float: right;
+  padding-right: 0;
+}
+
+.categories .category:last-child {
+  display: block;
+  width: 100%;
+}
+
+.category img {
+  width: 100%;
+  display: block;
+}
+
+.category span {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  background-color: #10504f;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.newArrivals h1 {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 45px;
+}
+
+.newArrival .title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.newArrival .variant {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.newArrival .price {
+  font-family: 'Pacifico', cursive;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.banner .heroCta h1 {
+  font-size: 26px;
+  line-height: 46px;
+}
+
+.banner .heroCta img {
+  width: 100%;
+}
+
+.banner .heroCta p {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.banner .heroCta button {
+  font-family: 'Lato', sans-serif;
+  padding: 12px 20px;
+  font-size: 12px;
+  background-color: #000000;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.stayConnected {
+  padding: 25px 27px;
+  color: #ffffff;
+}
+
+.banner .heroCta .img {
+  width: 100%;
+}
+
+.banner .heroCta .cta {
+  padding-bottom: 35px;
+}
+
+.stayConnected .form {
+  width: 100%;
+}
+
+.stayConnected img {
+  width: 28px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.stayConnected h1 {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.stayConnected p {
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.stayConnected input {
+  display: none;
+}
+
+.stayConnected button {
+  font-family: 'Lato', sans-serif;
+  background-color: #10504f;
+  border: 1px solid #ffffff;
+  padding: 13px 25px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer {
+  display: block;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer ul {
+  display: block;
+  padding-inline-start: 0;
+}
+
+.footer ul li {
+  list-style-type: none;
+  text-align: left;
+  line-height: 38px;
+}
+
+.footer ul li.heading {
+  padding-bottom: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+}
+
+.footer ul.customerService {
+  margin-top: 0;
+}
+
+.footer ul.company li {
+  display: none;
+}
+
+.footer ul.company li.heading {
+  display: block;
+}
+
+.footer .social {
+  position: relative;
+  right: 0;
+  text-align: left;
+}
+
+.footer .social .heading {
+  display: block;
+  padding: 0;
+  margin: 0 0 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.footer .social .socialIcon {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer .social .socialIcon.first {
+  padding: 0 15px 0 0;
+}
+
+@media (min-width: 830px) {
+  .promoBar {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+
+  .nav .container {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    padding: 10px 0;
+  }
+
+  .nav .menu {
+    display: none;
+  }
+
+  .nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .nav .navItems {
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+  }
+
+  .nav ul.navLinks {
+    display: inline-block;
+  }
+
+  .heroSlider .heroCta .cta {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+
+  .heroSlider .heroCta .cta {
+    padding: 10px 0 35px 0;
+  }
+
+  .heroSlider .heroCta .cta h1 {
+    font-weight: normal;
+    font-size: 60px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .heroSlider .heroCta .cta p {
+    font-size: 26px;
+    margin-top: 31px;
+    text-align: left;
+  }
+
+  .categories {
+    width: 100%;
+  }
+
+  .categories .category {
+    display: inline-block;
+    width: 33.3333%;
+    max-width: 435px;
+    height: 569px;
+  }
+
+  .categories .category:nth-child(2) {
+    float: none;
+  }
+
+  .categories .category:last-child {
+    display: inline-block;
+    width: 33.3333%;
+    height: 569px;
+  }
+
+  .category img {
+    width: 100%;
+    display: block;
+  }
+
+  .category span {
+    width: 100%;
+    display: block;
+    padding: 16px 0;
+    background-color: #10504f;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 70px;
+    color: #ffffff;
+  }
+
+  .newArrivals h1 {
+    font-size: 60px;
+    line-height: 105px;
+  }
+
+  .newArrival .title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .newArrival .variant {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .newArrival .price {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  .banner .heroCta {
+    position: relative;
+  }
+
+  .banner .heroCta .cta {
+    position: absolute;
+    text-align: left;
+    top: 52px;
+    right: 50px;
+  }
+
+  .banner .heroCta h1 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #ffffff;
+  }
+
+  .banner .heroCta p {
+    font-size: 26px;
+    line-height: 31px;
+    color: #ffffff;
+  }
+
+  .banner .heroCta button {
+    font-family: 'Lato', sans-serif;
+    padding: 14px 20px;
+    font-size: 14px;
+    background-color: #10504f;
+  }
+
+  .stayConnected {
+    padding: 75px 50px;
+  }
+
+  .stayConnected .header {
+    display: block;
+    width: 100%;
+  }
+
+  .stayConnected .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stayConnected img {
+    display: inline-block;
+    width: 52px;
+  }
+
+  .stayConnected h1 {
+    display: inline-block;
+    font-size: 40px;
+    line-height: 70px;
+  }
+
+  .stayConnected p {
+    margin-top: 0;
+    display: inline-block;
+    width: 50%;
+    padding-bottom: 0;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .stayConnected .form {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .stayConnected input {
+    display: inline-block;
+    width: 490px;
+    height: 24px;
+    padding: 15px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .stayConnected button {
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    margin-left: 15px;
+    padding: 0 25px;
+    height: 54px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer {
+    display: flex;
+    padding: 60px 48px;
+  }
+
+  .footer ul {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .footer ul.company {
+    padding-left: 92px;
+  }
+
+  .footer ul.company li {
+    display: block;
+  }
+
+  .footer .social {
+    position: absolute;
+    right: 48px;
+  }
+
+  .footer ul.social li.twitter {
+    display: none;
+  }
 }
