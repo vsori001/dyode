@@ -1,0 +1,542 @@
+.App {
+  text-align: center;
+}
+
+body,
+html {
+  font-family: 'Lato', sans-serif;
+  color: #000000;
+}
+
+p {
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+  padding: 13px 20px;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.green {
+  color: #10504f;
+}
+
+.greenBg {
+  background-color: #10504f;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.promoBar {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: 830px) {
+    padding: 15px;
+  }
+}
+
+.nav {
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .menu {
+    display: block;
+    border-radius: 28px;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #ffffff;
+
+    span {
+      background-color: #ffffff;
+      width: 18px;
+      height: 2px;
+      margin: 3px auto;
+      padding: 0;
+      display: block;
+
+      &:first-child {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  ul {
+    text-align: right;
+  }
+
+  ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  ul.navLinks {
+    display: none;
+  }
+
+  .navItems {
+    flex-grow: 1;
+  }
+
+  .logo {
+    padding: 10px 25px;
+    left: 50px;
+    width: 55px;
+    height: auto;
+    display: block;
+  }
+
+  @media (min-width: 830px) {
+    .container {
+      justify-content: space-evenly;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .navItems {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    ul {
+      flex-grow: 1;
+    }
+
+    ul.navLinks {
+      display: inline-block;
+    }
+
+    .logo {
+      width: 93px;
+      height: auto;
+    }
+  }
+}
+
+.heroCta img {
+  width: 100%;
+}
+
+.heroSlider .heroCta,
+.banner .heroCta {
+  position: relative;
+  background-color: #efefef;
+}
+
+.heroSlider {
+  .heroCta .cta {
+    padding: 0 0 35px 0;
+
+    h1 {
+      font-size: 26px;
+      line-height: 45px;
+      margin-bottom: 0;
+      color: #10504f;
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #10504f;
+    }
+
+    button {
+      background-color: #000000;
+    }
+
+    @media (min-width: 830px) {
+      padding: 0;
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      text-align: left;
+
+      h1 {
+        font-size: 60px;
+        line-height: 105px;
+      }
+
+      p {
+        font-size: 26px;
+        line-height: 31px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.categories {
+  width: 100%;
+  margin: 10px auto;
+
+  .mobileRow {
+    display: block;
+    width: 100%;
+  }
+
+  .category {
+    display: inline-block;
+    width: 47%;
+    padding: 5px;
+    flex-grow: 1;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    span {
+      width: 100%;
+      display: block;
+      padding: 10px 0;
+      background-color: #10504f;
+      font-family: 'Pacifico', cursive;
+      font-size: 20px;
+      font-weight: 400;
+      color: #ffffff;
+    }
+  }
+
+  .mobileRow:last-child .category:last-child {
+    width: 95%;
+  }
+
+  @media (min-width: 830px) {
+    display: flex;
+    justify-content: center;
+
+    .mobileRow {
+      display: flex;
+      width: auto;
+    }
+
+    .mobileRow:last-child .category:last-child {
+      width: 100%;
+    }
+  }
+}
+
+.newArrivals {
+  padding: 0 20px 20px;
+
+  h1 {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  .newArrival {
+    .title {
+      margin: 10px 0 0;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .variant {
+      margin: 0;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+
+    .price {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  @media (min-width: 830px) {
+    h1 {
+      font-size: 60px;
+      line-height: 105px;
+    }
+
+    .newArrival {
+      .title {
+        font-size: 22px;
+        line-height: 26px;
+      }
+
+      .variant {
+        padding-top: 5px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .price {
+        padding-top: 10px;
+        font-size: 26px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+.banner .heroCta {
+  h1 {
+    margin: 20px 0 0;
+    font-size: 26px;
+    line-height: 46px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  button {
+    background-color: #000000;
+  }
+
+  .cta {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: 830px) {
+    position: relative;
+
+    .cta {
+      position: absolute;
+      text-align: left;
+      top: 52px;
+      right: 50px;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 25px 0;
+      font-size: 26px;
+      line-height: 31px;
+      color: #ffffff;
+    }
+
+    button {
+      font-size: 14px;
+      background-color: #10504f;
+    }
+  }
+}
+
+.stayConnected {
+  padding: 25px 27px;
+  color: #ffffff;
+
+  .form {
+    width: 100%;
+  }
+
+  img {
+    width: 28px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  p {
+    padding-bottom: 50px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  input {
+    display: none;
+  }
+
+  button {
+    background-color: #10504f;
+    border: 1px solid #ffffff;
+  }
+
+  @media (min-width: 830px) {
+    padding: 75px 50px;
+
+    .header {
+      display: block;
+      width: 100%;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 52px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 70px;
+    }
+
+    p {
+      padding-right: 50px;
+      margin-top: 0;
+      display: inline-block;
+      width: 50%;
+      padding-bottom: 0;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: left;
+    }
+
+    .form {
+      display: inline-flex;
+      width: 50%;
+    }
+
+    input {
+      display: inline-block;
+      width: 490px;
+      height: 54px;
+      padding: 0 15px;
+      font-size: 22px;
+      font-family: 'Lato', sans-serif;
+      border: none;
+    }
+
+    button {
+      display: inline-block;
+      border: 2px solid #ffffff;
+      margin-left: 15px;
+      padding: 0 25px;
+      height: 54px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.footer {
+  display: block;
+  padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+
+  ul {
+    display: block;
+    padding-inline-start: 0;
+
+    &.customerService {
+      margin-top: 0;
+    }
+
+    li {
+      list-style-type: none;
+      text-align: left;
+      line-height: 38px;
+
+      &.heading {
+        padding-bottom: 10px;
+        font-family: 'Pacifico', cursive;
+        font-size: 22px;
+      }
+    }
+
+    &.company li {
+      display: none;
+
+      &.heading {
+        display: block;
+      }
+    }
+  }
+
+  .social {
+    position: relative;
+    right: 0;
+    text-align: left;
+
+    .heading {
+      display: block;
+      padding: 0;
+      margin: 0 0 10px;
+      font-family: 'Pacifico', cursive;
+      font-size: 22px;
+      line-height: 38px;
+    }
+
+    .socialIcon {
+      display: inline-block;
+      padding: 0 15px;
+
+      &.first {
+        padding: 0 15px 0 0;
+      }
+    }
+  }
+
+  @media (min-width: 830px) {
+    display: flex;
+    padding: 60px 48px;
+
+    ul {
+      margin: 0;
+      align-self: flex-start;
+
+      &.company {
+        padding-left: 92px;
+
+        li {
+          display: block;
+        }
+      }
+    }
+
+    .social {
+      position: absolute;
+      right: 48px;
+
+      li.twitter {
+        display: none;
+      }
+    }
+  }
+}
